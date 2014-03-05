@@ -14,6 +14,8 @@ public class ElectiveSubject {
     private String desc;
     private Teacher teacher;
     private int nextID = 10;
+    
+    private String LOLOOOOOOOO;
 
     public ElectiveSubject(String name, String desc, Teacher teacher) {
         this.name = name;
