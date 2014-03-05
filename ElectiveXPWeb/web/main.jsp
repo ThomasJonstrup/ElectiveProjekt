@@ -1,6 +1,6 @@
 <%-- 
-    Document   : ChoiseRound1
-    Created on : 04-03-2014, 12:48:21
+    Document   : main
+    Created on : 05-03-2014, 11:39:25
     Author     : Thomas
 --%>
 
@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        
+        <a href="Controller?command=subject"> Round 1</a>
     </body>
 </html>

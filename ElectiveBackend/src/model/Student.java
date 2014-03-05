@@ -4,13 +4,11 @@
  */
 package model;
 
-import java.io.Serializable;
-
 /**
  *
  * @author Thomas
  */
-public class Student extends Person implements Serializable{
+public class Student extends Person {
 
     private int stuId;
     private int firstPri1ElectiveSubjID;
@@ -44,19 +42,19 @@ public class Student extends Person implements Serializable{
     }
     
 
-    public int getFirstPri1() {
+    public int getFirstPri1ElectiveSubjID() {
         return firstPri1ElectiveSubjID;
     }
 
-    public int getFirstPri2() {
+    public int getFirstPri2ElectiveSubjID() {
         return firstPri2ElectiveSubjID;
     }
 
-    public int getSecondPri1() {
+    public int getSecondPri1ElectiveSubjID() {
         return secondPri1ElectiveSubjID;
     }
 
-    public int getSecondPri2() {
+    public int getSecondPri2ElectiveSubjID() {
         return  secondPri2ElectiveSubjID;
     }
 

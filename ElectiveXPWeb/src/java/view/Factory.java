@@ -20,6 +20,8 @@ public class Factory {
     private ElectiveManager manager = new DummyBackend();
     
     public Factory() {
+            commands.put("main", new TargetCommand("main.jsp"));
+            commands.put("subject", new FirstSelectionCommand("round1.jsp"));
     }
     
     public static Factory getInstance(){
@@ -29,4 +31,17 @@ public class Factory {
          return instance;
     }
     
+        public Command findCommand(String key) {
+        if (key == null) key = "main";
+        return commands.get(key);
+        }
+
+    public ElectiveManager getManager() {
+        return manager;
+    }
+
+    public void setManager(ElectiveManager manager) {
+        this.manager = manager;
+    }
+        
 }

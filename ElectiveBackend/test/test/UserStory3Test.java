@@ -52,10 +52,10 @@ public class UserStory3Test {
         stu.setSecondPri1(7);
         stu.setSecondPri2(9);
         
-        assertEquals(3, stu.getFirstPri1());
-        assertEquals(5, stu.getFirstPri2());
-        assertEquals(7, stu.getSecondPri1());
-        assertEquals(9, stu.getSecondPri2());
+        assertEquals(3, stu.getFirstPri1ElectiveSubjID());
+        assertEquals(5, stu.getFirstPri2ElectiveSubjID());
+        assertEquals(7, stu.getSecondPri1ElectiveSubjID());
+        assertEquals(9, stu.getSecondPri2ElectiveSubjID());
     }
     
     
