@@ -10,8 +10,8 @@ package model;
  */
 public class Teacher extends Person {
 
-    public Teacher(String fName, String lName, int cpr, String email, String password) {
-        super(fName, lName, cpr, email, password);
+    public Teacher(int id, String fName, String lName, int cpr, String email, String password) {
+        super(id, fName, lName, cpr, email, password);
     }
     
 }

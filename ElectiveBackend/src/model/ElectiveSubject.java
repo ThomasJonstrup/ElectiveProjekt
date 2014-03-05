@@ -13,15 +13,14 @@ public class ElectiveSubject {
     private String name;
     private String desc;
     private Teacher teacher;
-    private int nextID = 10;
+//    private int nextID = 10;
     
-    private String LOLOOOOOOOO;
 
-    public ElectiveSubject(String name, String desc, Teacher teacher) {
+    public ElectiveSubject(int subjectId, String name, String desc, Teacher teacher) {
         this.name = name;
         this.desc = desc;
         this.teacher = teacher;
-        this.subjectId = nextID;
+        this.subjectId = subjectId;
     }
 
     public int getSubjectId() {

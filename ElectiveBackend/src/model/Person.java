@@ -12,18 +12,20 @@ import java.io.Serializable;
  */
 public class Person implements Serializable{
     
+    private int id;
     private String fName;
     private String lName;
     private int cpr;
     private String email;
     private String password;
     
-    public Person(String fName, String lName, int cpr, String email, String password) {
+    public Person(int id,String fName, String lName, int cpr, String email, String password) {
         this.fName = fName;
         this.lName = lName;
         this.cpr = cpr;
         this.email = email;
         this.password = password;
+        this.id = id;
     }
     
     

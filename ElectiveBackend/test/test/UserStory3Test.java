@@ -38,7 +38,7 @@ public class UserStory3Test {
     
     @Before
     public void setUp() {
-       stu = new Student("Thomas","JepsenMoneymaker",11,"jep@cph.dk","123", 0,0,0,0);
+       stu = new Student(1, "Thomas","JepsenMoneymaker",11,"jep@cph.dk","123", 0,0,0,0);
     }
     
     @After

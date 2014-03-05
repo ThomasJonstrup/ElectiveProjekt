@@ -10,5 +10,5 @@ package electivexp;
  */
 public interface ElectiveManager {
     
-    void makeChoise(int firstPri1ElectiveSubjID,int firstPri2ElectiveSubjID, int second1ElectiveSubjID, int second2Pri2ElectiveSubjID);
+    void makeChoise(int stuId, int firstPri1ElectiveSubjID,int firstPri2ElectiveSubjID, int second1ElectiveSubjID, int second2Pri2ElectiveSubjID);
 }
