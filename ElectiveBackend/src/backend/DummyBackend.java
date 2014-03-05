@@ -5,7 +5,9 @@
 package backend;
 
 import electivexp.ElectiveManager;
+import electivexp.dto.ElectiveSubjectSummary;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import model.ElectiveSubject;
 import model.Person;
@@ -137,5 +139,10 @@ public class DummyBackend implements ElectiveManager{
 
 
         return priorities;
+    }
+
+    @Override
+    public Collection<ElectiveSubjectSummary> getSubjects() {
+        return DummyBankAssembler.createElectiveSummaries(electivSubjects);
     }
 }

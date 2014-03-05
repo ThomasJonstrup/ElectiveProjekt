@@ -5,6 +5,7 @@
 package view;
 
 import backend.DummyBackend;
+import electivexp.dto.ElectiveSubjectSummary;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import model.ElectiveSubject;
@@ -22,10 +23,10 @@ public class FirstSelectionCommand extends TargetCommand {
     @Override
     public String execute(HttpServletRequest request) {
         
-        DummyBackend dummy = new DummyBackend();
-        ArrayList<ElectiveSubject> electiveSubjects = new ArrayList<>();
-        electiveSubjects = dummy.getElectivSubjects();
-        request.setAttribute("subjects", electiveSubjects);
+//        DummyBackend dummy = new DummyBackend();
+//        ArrayList<ElectiveSubjectSummary> electiveSubjects = new ArrayList<>();
+//        electiveSubjects = dummy.getElectivSubjects();
+        request.setAttribute("subjects", Factory.getInstance().getManager().getSubjects());
         
         return super.execute(request); //To change body of generated methods, choose Tools | Templates.
     }

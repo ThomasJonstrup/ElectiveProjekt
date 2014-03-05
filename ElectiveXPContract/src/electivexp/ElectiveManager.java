@@ -4,6 +4,9 @@
  */
 package electivexp;
 
+import electivexp.dto.ElectiveSubjectSummary;
+import java.util.Collection;
+
 /**
  *
  * @author Thomas
@@ -11,5 +14,5 @@ package electivexp;
 public interface ElectiveManager {
     
     void makeChoise(int stuId, int firstPri1ElectiveSubjID,int firstPri2ElectiveSubjID, int second1ElectiveSubjID, int second2Pri2ElectiveSubjID);
-    
+    Collection<ElectiveSubjectSummary> getSubjects();
 }
