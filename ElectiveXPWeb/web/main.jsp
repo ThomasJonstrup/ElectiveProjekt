@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <a href="Controller?command=subject"> Round 1</a>
+        <a href="FrontController?command=subject"> Round 1</a>
     </body>
 </html>
