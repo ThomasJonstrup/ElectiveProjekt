@@ -10,14 +10,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Round 1 selection</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1 style="color: red">First round</h1>
         <div id="subjects">
+            <h2>Choose 2 first and 2 second priorities</h2>
     <c:forEach items="${subjects}" var="subject">
-        ${subject.name}
-    </c:forEach>            
+        <p>Subject name: ${subject.name}. Subject id: ${subject.id}</p>
+    </c:forEach>
+        </br><p>Write the subjects id you wish in the boxes below:</p>
+        <form name="selectSubjects" method="post" action="FrontController">
+            <input type="hidden" name="command" value="makeChoises_command">
+            <p style="display: inline">First priority</p>
+            <input type="text" name="firstpri1">
+            <p style="display: inline">First priority</p>
+            <input type="text" name="firstpri2">
+            <p style="display: inline">Second priority</p>
+            <input type="text" name="secondpri1">
+            <p style="display: inline">Second priority</p>
+            <input type="text" name="secondpri2"></br>
+            <input type="submit" name="makeChoises" value="Make choises">
+        </form>
         </div>
     </body>
 </html>

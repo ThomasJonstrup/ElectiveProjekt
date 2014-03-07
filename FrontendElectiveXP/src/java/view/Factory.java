@@ -22,6 +22,7 @@ public class Factory {
     public Factory() {
             commands.put("main", new TargetCommand("main.jsp"));
             commands.put("subject", new FirstSelectionCommand("round1.jsp"));
+            commands.put("makeChoises_command", new MakeChoisesCommand("round1End.jsp"));
     }
     
     public static Factory getInstance(){
